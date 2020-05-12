@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center pt-3">TODO APP</h1>
+
+        <div class="row pt-4">
+            <div class="col-sm-10 pr-0">
+                <form id="first-form">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <input type="text" id="input2" placeholder="add todo" name="addTodo" class="form-control center">
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <button id="remove-all" class="btn btn-danger ml-4">DELETE ALL</button>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-sm">
+                <input type="text" id="input1" placeholder="search" class="form-control center">
+            </div>
+        </div>
+
+        <div>
+            <div class="row ">
+                <div class="com-sm" id="head2">
+                    <h2 class="mt-3 ml-3"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm" id="notes">
+                    <table class="table table-striped mt-5">
+                        <thead>
+                            <tr>
+                                <th>TODOS</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="todo-list"></tbody>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="func.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
