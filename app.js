@@ -16,8 +16,8 @@ document.querySelector('#input1').addEventListener('input', (e) => {
 
 //form submission
 document.querySelector('#first-form').addEventListener('submit', (e) => {
-    const target = e.target;
-    // e.preventDefault();
+    console.log(e)
+    e.preventDefault();
     const todo = {
         job: e.target.elements.addTodo.value,
         completed: false

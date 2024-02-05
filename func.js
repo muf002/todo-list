@@ -2,6 +2,7 @@ const getTodos = function() {
     const todoJson = localStorage.getItem('notes');
     try {
         if (todoJson !== null) return JSON.parse(todoJson);
+        else return []
     } catch (e) {
         return [];
     }
@@ -27,7 +28,7 @@ const publish = function(todos) {
     const todoJson = getTodos();
     document.querySelector('h2').innerHTML = '';
     let sum = 0;
-    todos.forEach(todo => {
+    todoJson.forEach(todo => {
         if (todo.completed === false) sum++;
     });
     const para1 = document.querySelector('h2');
